@@ -17,11 +17,11 @@ export function GatewayPage() {
       {/* Logo Header */}
       <div className="absolute top-0 left-0 right-0 z-30 flex flex-col items-center pt-6 pb-4 pointer-events-none">
         <Image
-          src="https://galaxy-prod.tlcdn.com/gen/user_31zSEYkIqFE7G8QvjEYZMUQmYpQ/78313c7b-b190-472f-9507-794e262eaf1e.png"
+          src="https://galaxy-prod.tlcdn.com/view/user_31zSEYkIqFE7G8QvjEYZMUQmYpQ/4972675eac784e168821288e8eb72782.png"
           alt="The Trades Pipeline"
           width={220}
           height={220}
-          className="w-32 h-32 md:w-44 md:h-44 object-contain drop-shadow-2xl"
+          className="w-36 h-36 md:w-52 md:h-52 object-contain drop-shadow-2xl"
           priority
         />
       </div>
@@ -40,7 +40,7 @@ export function GatewayPage() {
           <motion.div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(circle at 35% 55%, rgba(255,107,43,0.14) 0%, transparent 65%)" }} animate={{ opacity: hovered === "residential" ? 1 : 0 }} transition={{ duration: 0.35 }} />
           <div className="absolute right-0 top-[20%] bottom-[20%] w-px bg-[#FF6B2B] opacity-30 hidden md:block" />
           <Link href="/residential" className="relative z-10 w-full block">
-            <motion.div className="text-center px-8 md:px-14 max-w-lg mx-auto pt-44 pb-12 md:pt-20 md:pb-0" animate={{ scale: hovered === "residential" ? 1.03 : 1 }} transition={{ duration: 0.35 }}>
+            <motion.div className="text-center px-8 md:px-14 max-w-lg mx-auto pt-48 pb-12 md:pt-24 md:pb-0" animate={{ scale: hovered === "residential" ? 1.03 : 1 }} transition={{ duration: 0.35 }}>
               <div className="w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-[#FF6B2B] bg-[#FF6B2B]/10 flex items-center justify-center mx-auto mb-5">
                 <Home className="w-8 h-8 md:w-9 md:h-9 text-[#FF6B2B]" />
               </div>
@@ -69,7 +69,7 @@ export function GatewayPage() {
           <motion.div className="absolute inset-0 pointer-events-none" style={{ background: "linear-gradient(135deg, rgba(148,163,184,0.07) 0%, transparent 55%)" }} animate={{ opacity: hovered === "commercial" ? 1 : 0.35 }} transition={{ duration: 0.35 }} />
           <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "repeating-linear-gradient(0deg,#fff 0,#fff 1px,transparent 0,transparent 40px)" }} />
           <Link href="/commercial" className="relative z-10 w-full block">
-            <motion.div className="text-center px-8 md:px-14 max-w-lg mx-auto pt-10 pb-16 md:pt-20 md:pb-0" animate={{ scale: hovered === "commercial" ? 1.03 : 1 }} transition={{ duration: 0.35 }}>
+            <motion.div className="text-center px-8 md:px-14 max-w-lg mx-auto pt-10 pb-16 md:pt-24 md:pb-0" animate={{ scale: hovered === "commercial" ? 1.03 : 1 }} transition={{ duration: 0.35 }}>
               <div className="w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-slate-500 bg-slate-500/10 flex items-center justify-center mx-auto mb-5">
                 <Building className="w-8 h-8 md:w-9 md:h-9 text-slate-300" />
               </div>
