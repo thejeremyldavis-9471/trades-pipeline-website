@@ -55,8 +55,8 @@ export function Nav({ variant = "residential" }: NavProps) {
             ))}
           </div>
           <div className="hidden md:flex items-center gap-4">
-            <a href="tel:+1" className="flex items-center gap-2 text-slate-400 hover:text-white text-sm transition-colors">
-              <Phone className="w-4 h-4" /><span>Call Us</span>
+            <a href="tel:+13127157977" className="flex items-center gap-2 text-slate-400 hover:text-white text-sm transition-colors">
+              <Phone className="w-4 h-4" /><span>(312) 715-7977</span>
             </a>
             <Link href="/contact">
               <button className={`${ctaClass} font-bold px-5 py-2 text-xs tracking-widest uppercase flex items-center gap-2 transition-colors`}>
@@ -88,6 +88,9 @@ export function Nav({ variant = "residential" }: NavProps) {
                   {l.label}
                 </Link>
               ))}
+              <a href="tel:+13127157977" className="flex items-center gap-2 text-slate-300 hover:text-white py-2.5 text-sm border-b border-slate-800">
+                <Phone className="w-4 h-4 text-[#FF6B2B]" />(312) 715-7977
+              </a>
               <Link href="/contact" onClick={() => setOpen(false)}>
                 <button className={`w-full mt-4 ${ctaClass} font-bold py-3 text-xs tracking-widest uppercase transition-colors`}>
                   Book Free Strategy Call
