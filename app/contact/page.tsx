@@ -1,6 +1,6 @@
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
-import { ContactForm } from "@/components/contact-form";
+import { GhlForm } from "@/components/ghl-form";
 import { Phone, Mail, MapPin, Clock, Shield, CheckCircle } from "lucide-react";
 
 export const metadata = {
@@ -94,9 +94,17 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Right: Form */}
+          {/* Right: GHL Form */}
           <div className="lg:col-span-3">
-            <ContactForm />
+            <div className="bg-white rounded-2xl shadow-xl border border-slate-100 p-6 md:p-8">
+              <h2 className="font-display text-2xl font-bold text-[#1A2332] uppercase mb-2">
+                Book Your Free Strategy Call
+              </h2>
+              <p className="text-slate-500 text-sm mb-6">
+                Fill out the form below and we&apos;ll reach out within 1 business hour.
+              </p>
+              <GhlForm />
+            </div>
           </div>
 
         </div>
