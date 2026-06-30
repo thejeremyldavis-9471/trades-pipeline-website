@@ -1,7 +1,7 @@
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { GhlForm } from "@/components/ghl-form";
-import { Phone, Mail, MapPin, Clock, Shield, CheckCircle } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Shield, CheckCircle, DollarSign, TrendingUp } from "lucide-react";
 
 export const metadata = {
   title: "Book a Strategy Call | The Trades Pipeline",
@@ -51,8 +51,10 @@ export default function ContactPage() {
       <section className="py-20 px-4 bg-slate-50">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-12">
 
-          {/* Left: What happens */}
+          {/* Left column */}
           <div className="lg:col-span-2 space-y-8">
+
+            {/* What happens on the call */}
             <div>
               <h2 className="font-display text-2xl font-bold text-[#1A2332] uppercase mb-4">
                 What Happens on the Call
@@ -77,9 +79,43 @@ export default function ContactPage() {
               </div>
             </div>
 
+            {/* Why we ask about budget */}
+            <div className="bg-[#FF6B2B]/5 border border-[#FF6B2B]/20 rounded-2xl p-6">
+              <div className="flex items-center gap-2 mb-3">
+                <DollarSign className="w-5 h-5 text-[#FF6B2B]" />
+                <h3 className="font-display text-sm font-bold text-[#1A2332] uppercase tracking-wide">Why We Ask About Your Budget</h3>
+              </div>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                We work with contractors at every stage — from $0/month in marketing spend to $5,000+.
+                Knowing where you are helps us recommend the right starting point.
+                There&apos;s no minimum to book a call.
+              </p>
+            </div>
+
+            {/* What good looks like */}
+            <div className="bg-[#1A2332]/5 border border-[#1A2332]/10 rounded-2xl p-6">
+              <div className="flex items-center gap-2 mb-3">
+                <TrendingUp className="w-5 h-5 text-[#FF6B2B]" />
+                <h3 className="font-display text-sm font-bold text-[#1A2332] uppercase tracking-wide">What Results Look Like at Month 3</h3>
+              </div>
+              <ul className="space-y-2">
+                {[
+                  "8–15 qualified inbound leads/month",
+                  "Cost-per-lead under $85 in most markets",
+                  "Google Business Profile in the top 3",
+                  "Website converting 4–7% of visitors to calls",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-[#FF6B2B] shrink-0 mt-0.5" />
+                    <span className="text-slate-600 text-sm">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
             {/* Direct contact */}
             <div className="bg-[#1A2332] rounded-2xl p-6 text-white">
-              <h3 className="font-display text-lg font-bold uppercase mb-4">Prefer to Reach Out Directly?</h3>
+              <h3 className="font-display text-base font-bold uppercase mb-4">Prefer to Reach Out Directly?</h3>
               <div className="space-y-3">
                 <a href="tel:+13127157977" className="flex items-center gap-3 text-slate-300 hover:text-[#FF6B2B] transition-colors text-sm">
                   <Phone className="w-4 h-4 text-[#FF6B2B]" />(312) 715-7977
@@ -92,6 +128,7 @@ export default function ContactPage() {
                 </div>
               </div>
             </div>
+
           </div>
 
           {/* Right: GHL Form */}
@@ -100,8 +137,11 @@ export default function ContactPage() {
               <h2 className="font-display text-2xl font-bold text-[#1A2332] uppercase mb-2">
                 Book Your Free Strategy Call
               </h2>
-              <p className="text-slate-500 text-sm mb-6">
+              <p className="text-slate-500 text-sm mb-1">
                 Fill out the form below and we&apos;ll reach out within 1 business hour.
+              </p>
+              <p className="text-slate-400 text-xs mb-6">
+                Takes about 2 minutes. No commitment required.
               </p>
               <GhlForm />
             </div>
