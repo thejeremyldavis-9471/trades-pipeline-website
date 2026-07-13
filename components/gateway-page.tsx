@@ -24,6 +24,7 @@ export function GatewayPage() {
           className="w-36 h-36 md:w-52 md:h-52 object-contain drop-shadow-2xl"
           priority
         />
+        <p className="text-slate-400 text-[11px] md:text-xs font-bold tracking-[0.3em] uppercase mt-2 text-center px-4">Your Fractional AI Assisted Growth Officer</p>
       </div>
 
       <div className="flex flex-col md:flex-row flex-1 min-h-screen">

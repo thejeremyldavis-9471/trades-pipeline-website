@@ -33,13 +33,13 @@ export default function ResidentialPage() {
             <Link href="#how-it-works"><button className="border border-slate-500 hover:border-slate-300 text-slate-300 hover:text-white font-bold px-8 py-4 text-xs tracking-widest uppercase transition-colors">See How It Works</button></Link>
           </div>
           <div className="mt-10 flex flex-wrap justify-center gap-x-8 gap-y-2 text-slate-400 text-xs tracking-wider">
-            <span>✓ No lock-in until month 13</span><span>✓ Built for trades only</span><span>✓ One client per trade per market</span>
+            <span>✓ 12-Month Growth Partnership</span><span>✓ Built for trades only</span><span>✓ One client per trade per market</span>
           </div>
         </div>
       </section>
       <section className="bg-[#0D1117] py-4 px-4 border-b border-slate-800">
         <div className="max-w-5xl mx-auto flex flex-wrap justify-center gap-6 text-slate-400 text-[10px] tracking-widest uppercase">
-          {["HVAC","Plumbing","Electrical","Roofing","Concrete","Landscaping","General Contracting","Garage Doors"].map((t) => (<span key={t} className="flex items-center gap-1.5"><span className="text-[#FF6B2B]">⚙</span>{t}</span>))}
+          {["HVAC","Plumbing","Electrical","Roofing","Concrete","Landscaping","General Contracting","Garage Doors"].map((t) => (<span key={t} className="flex items-center gap-1.5"><span className="text-[#FF6B2B]">✓</span>{t}</span>))}
         </div>
       </section>
       <section className="py-20 px-4 bg-gray-50">
@@ -67,7 +67,7 @@ export default function ResidentialPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <div className="text-[#FF6B2B] text-[10px] font-bold tracking-[0.35em] uppercase mb-3">The Trades Pipeline Difference</div>
-            <h2 className="font-display text-3xl md:text-5xl font-bold text-white">We&apos;re Not a Marketing Agency.<br />We&apos;re Your Marketing Department.</h2>
+            <h2 className="font-display text-3xl md:text-5xl font-bold text-white">I&apos;m Not a Marketing Agency.<br />I&apos;m Your AI Assisted Chief Growth Officer.</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[{Icon:Shield,title:"Built for Trades",body:"We don't serve dentists or real estate agents. Every system is designed exclusively for trades business owners."},{Icon:BarChart3,title:"Results You Can See",body:"Every lead tracked. Every call recorded. Every ad dollar accounted for. You'll never wonder if it's working."},{Icon:Zap,title:"AI-Powered 24/7",body:"Advanced AI automation runs your pipeline around the clock so you get results even when you're on the job site."},{Icon:Users,title:"Long-Term Partner",body:"We stay with you long enough to build something that compounds. More valuable every single month."}].map(({ Icon, title, body }) => (
@@ -123,7 +123,7 @@ export default function ResidentialPage() {
           <div className="text-center mb-14">
             <div className="text-[#FF6B2B] text-[10px] font-bold tracking-[0.35em] uppercase mb-3">Simple, Transparent Pricing</div>
             <h2 className="font-display text-3xl md:text-5xl font-bold text-white">Choose the Package That Matches Where You&apos;re Going</h2>
-            <p className="text-slate-400 mt-4 max-w-xl mx-auto text-sm leading-relaxed">All packages include a 12-month partnership. No hidden fees. No surprise add-ons.</p>
+            <p className="text-slate-400 mt-4 max-w-xl mx-auto text-sm leading-relaxed">All packages require a 12-month partnership. No hidden fees. No surprise add-ons.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {plans.map((plan) => (
@@ -147,7 +147,7 @@ export default function ResidentialPage() {
           <p className="text-orange-100 text-lg mb-8 leading-relaxed max-w-xl mx-auto">Every day without a real marketing system is a day your competitors are getting calls that should be yours. The strategy call is free. Let&apos;s fix that.</p>
           <Link href="/contact"><button className="bg-white hover:bg-gray-100 text-[#FF6B2B] font-bold px-10 py-4 text-xs tracking-widest uppercase flex items-center gap-3 mx-auto transition-colors">Book Your Free Strategy Call <ArrowRight className="w-4 h-4" /></button></Link>
           <div className="mt-7 flex flex-wrap justify-center gap-6 text-orange-100 text-xs tracking-wider">
-            <span>📅 Available evenings &amp; weekends</span><span>⚡ Limited spots per market</span><span>🔒 One client per trade per market</span>
+            <span>📅 Available evenings & weekends</span><span>⚡ Limited spots per market</span><span>🔒 One client per trade per market</span>
           </div>
         </div>
       </section>
