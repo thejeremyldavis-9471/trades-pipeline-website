@@ -23,19 +23,19 @@ export default function CommercialPage() {
     {
       num: "02",
       title: "Construction Project Intelligence",
-      body: "We monitor Dodge Construction Network and ConstructConnect for active commercial projects in your trade and geography. You’re introduced to the GC or owner before the bid goes out — before your competitors even know the project exists.",
-      tags: ["Dodge Data", "ConstructConnect", "Pre-bid introductions"]
+      body: "We monitor top project databases for active commercial projects in your trade and geography. You’re introduced to the GC or owner before the bid goes out — before your competitors even know the project exists.",
+      tags: ["Project Databases", "Market Intelligence", "Pre-bid introductions"]
     },
     {
       num: "03",
       title: "Government & Municipal Bid Tracking",
-      body: "SAM.gov, state procurement portals, school districts, municipalities — we monitor every relevant bid opportunity in your area and deliver a weekly report of the ones worth pursuing. No more manually hunting portals.",
-      tags: ["SAM.gov", "State portals", "Weekly hot-lead report"]
+      body: "Federal contracts, state procurement portals, school districts, municipalities — we monitor every relevant bid opportunity in your area and deliver a weekly report of the ones worth pursuing. No more manually hunting portals.",
+      tags: ["Federal Contracts", "State portals", "Weekly hot-lead report"]
     },
     {
       num: "04",
       title: "Sales Qualified Appointments",
-      body: "When outreach produces a warm response, we handle scheduling and qualification. You only pay the per-appointment fee for attended meetings with verified decision-makers who have a documented project need in your area — not for tire-kickers or no-shows.",
+      body: "When outreach produces a warm response, we handle scheduling and qualification. You only pay the per-appointment fee for attended meetings with verified decision-makers,who have a documented project need in your area — not for tire-kickers or no-shows.",
       tags: ["Verified decision-makers", "Attended meetings only", "Project-qualified"]
     },
     {
@@ -114,6 +114,7 @@ export default function CommercialPage() {
           <h1 className="font-display text-white text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6">
             The Six-Figure Contracts<br /><span className="text-slate-300">Are Going to</span><br /><span style={{ color: "#FF6B2B" }}>Someone Else.</span>
           </h1>
+          <p className="text-[#FF6B2B] font-display font-bold text-lg md:text-xl uppercase tracking-wide mb-6">I&apos;m Your AI Assisted Chief Growth Officer</p>
           <p className="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
             We research the decision-makers who sign the contracts in your trade and geography, build a verified outreach pipeline, and run multi-touch sequences until we get you in the room. Commercial sales cycles are long — we’ll be honest about the timeline and show you exactly what to expect.
           </p>
@@ -346,7 +347,7 @@ export default function CommercialPage() {
           </Link>
           <div className="mt-7 flex flex-wrap justify-center gap-6 text-slate-500 text-xs tracking-wider">
             <span>&#128197; Available evenings &amp; weekends</span>
-            <span>&#128274; Confidential — your competitors won’t know</span>
+            <span>&#128274; Confidential — your competitors won&apos;t know</span>
           </div>
         </div>
       </section>
