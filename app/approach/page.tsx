@@ -1,0 +1,22 @@
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import { Nav } from "@/components/nav";
+import { Footer } from "@/components/footer";
+
+const steps = [
+  ["01", "OBSERVE", "Independent Executive Assessment", "Before asking for your time, we believe it is only appropriate to invest some of ours. We begin with what can responsibly be learned outside the business: known, unknown and unassumed."],
+  ["02", "LISTEN", "Executive Growth Discovery", "What we cannot know, we ask. Public information tells only part of the story. Leadership supplies context. The next step is not a presentation. It is a conversation."],
+  ["03", "UNDERSTAND", "Internal Growth Intelligence", "Observation gives signals. Conversation gives context. Internal information gives understanding. The objective is not to find everything that could be better. It is to understand what matters."],
+  ["04", "CONNECT", "Growth Synchronization™", "The first problem you see is not always the first problem to solve. Constraints can originate elsewhere, improvements can create pressure elsewhere, and opportunity can depend on capacity that does not yet exist."],
+  ["05", "BUILD", "Meaningful Progress", "Understanding without action creates little value. Sometimes we improve what exists. Sometimes we build what is missing. Sometimes the right decision is not to change something yet. The objective is not activity. It is meaningful progress."],
+] as const;
+
+export default function ApproachPage() {
+  return <><Nav /><main>
+    <section className="industrial-grid bg-[#151b21] py-24 text-white"><div className="section-shell max-w-5xl"><div className="eyebrow">Our Approach</div><h1 className="mt-5 font-display text-5xl font-bold uppercase sm:text-7xl">Truth Before Assumption.</h1><p className="mt-8 max-w-3xl text-xl leading-9 text-slate-300">The most expensive solutions often begin with the wrong diagnosis. Before recommending change, we work to understand what is true.</p><div className="mt-10 border-l-4 border-[#c85a24] pl-6 text-2xl font-display font-bold uppercase">We don't fill the space between what can be observed and what can only be understood with assumptions.</div></div></section>
+    <section className="bg-[#f2efe8] py-24"><div className="section-shell"><div className="grid gap-6 lg:grid-cols-5">{steps.map(([n,title,sub,body]) => <div key={title} className="border-t-4 border-[#c85a24] bg-white p-7"><div className="text-xs font-bold tracking-[.25em] text-[#c85a24]">{n}</div><h2 className="mt-4 font-display text-2xl font-bold uppercase">{title}</h2><div className="mt-2 text-xs font-bold uppercase tracking-wider text-slate-500">{sub}</div><p className="mt-5 text-sm leading-7 text-slate-600">{body}</p></div>)}</div></div></section>
+    <section className="bg-[#1b232b] py-24 text-white"><div className="section-shell text-center"><div className="eyebrow">The Truth Cycle</div><h2 className="mt-5 font-display text-4xl font-bold uppercase sm:text-5xl">Observe → Listen → Understand → Connect → Build → Observe</h2><p className="mx-auto mt-7 max-w-3xl text-lg leading-8 text-slate-400">Truth is not a one-time exercise. Markets change. People change. Capacity changes. Opportunity changes. Understanding has to change with them.</p></div></section>
+    <section className="bg-white py-24"><div className="section-shell grid gap-10 lg:grid-cols-2"><div><div className="eyebrow">Partnership</div><h2 className="mt-4 font-display text-4xl font-bold uppercase">When the fit is right, understanding can become partnership.</h2></div><div className="text-lg leading-8 text-slate-600"><p>A Growth Partnership is not the presumed outcome of an executive conversation. Partnership begins only when both sides believe meaningful work is worth doing together and The Trades Pipeline can create value beyond the required investment.</p><p className="mt-5 font-semibold text-[#151b21]">We continue earning the partnership by continuing to create meaningful value.</p></div></div></section>
+    <section className="bg-[#c85a24] py-20 text-white"><div className="section-shell text-center"><h2 className="font-display text-4xl font-bold uppercase">We don't begin with answers.</h2><p className="mt-4 text-white/80">No presentation. No predetermined answers. No sales pitch.</p><Link href="/conversation" className="mt-8 inline-flex items-center gap-2 bg-white px-7 py-4 text-xs font-bold uppercase tracking-wider text-[#151b21]">Begin an Executive Conversation <ArrowRight className="h-4 w-4" /></Link></div></section>
+  </main><Footer /></>;
+}
