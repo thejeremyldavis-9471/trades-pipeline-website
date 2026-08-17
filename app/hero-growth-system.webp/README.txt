@@ -1,0 +1,1 @@
+Serves the locked Trades Pipeline homepage hero image from verified base64 payload chunks because binary image uploads through the connected GitHub bridge were not reliable.
