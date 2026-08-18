@@ -23,3 +23,15 @@
   .eyebrow { @apply font-display text-xs font-semibold uppercase tracking-[0.28em]; color: var(--orange); }
   .industrial-grid { background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px); background-size: 42px 42px; }
 }
+
+/* Locked homepage hero fallback: render the verified TTP artwork as the panel background. */
+div:has(> img[src="/hero-growth-system.jpg"]) {
+  background-image: url('/hero-growth-system.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+div:has(> img[src="/hero-growth-system.jpg"]) > img[src="/hero-growth-system.jpg"] {
+  display: none !important;
+}
