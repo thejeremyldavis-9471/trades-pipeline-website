@@ -13,7 +13,9 @@ const links = [
   ["Insights", "/insights"],
 ] as const;
 
-export function Nav() {
+type NavProps = { variant?: "residential" | "commercial" };
+
+export function Nav(_props: NavProps = {}) {
   const [open, setOpen] = useState(false);
   return (
     <nav className="sticky top-0 z-50 border-b border-white/10 bg-[#0a0c0e]/98 text-white">
