@@ -36,7 +36,7 @@ export default function Home() {
           <Link href="/approach" className="mt-6 inline-flex w-fit items-center gap-5 border border-[#ef5b0a] px-6 py-3.5 font-display text-[15px] font-bold uppercase tracking-[.03em] text-white transition hover:bg-[#ef5b0a]">Explore Our Approach <ArrowRight className="h-5 w-5 text-[#ef5b0a]"/></Link>
           <div className="mt-6 flex items-start gap-3 font-display text-[13px] font-semibold uppercase leading-[1.35] tracking-[.03em] text-[#f1f0eb]"><ShieldCheck className="mt-0.5 h-7 w-7 shrink-0 text-[#ef5b0a]"/><span>One partnership per trade within<br/>overlapping service territories.</span></div>
         </div>
-        <div className="relative min-h-[520px] overflow-hidden bg-[#090b0c] lg:min-h-[630px]" style={{backgroundImage:`url(${heroImage})`,backgroundSize:"cover",backgroundPosition:"center",backgroundRepeat:"no-repeat"}}>
+        <div className="relative min-h-[520px] overflow-hidden bg-[#090b0c] lg:min-h-[630px]" style={{backgroundImage:`url(${heroImage})`,backgroundSize:"contain",backgroundPosition:"center",backgroundRepeat:"no-repeat"}}>
           <div className="absolute inset-y-0 left-0 w-12 bg-gradient-to-r from-[#0b0d0f] to-transparent"/>
         </div>
       </div>
