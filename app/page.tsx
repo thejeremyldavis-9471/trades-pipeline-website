@@ -18,7 +18,7 @@ const beliefs = [
   [Target, "Legacy Beyond Revenue.", "Build something you'll be proud to leave behind."],
 ] as const;
 
-const heroImage = "https://raw.githubusercontent.com/thejeremyldavis-9471/trades-pipeline-website/76e196289da214bda47c053ac14879d253eeb375/public/hero-growth-system.jpg";
+const heroImage = "/hero-growth-system.png";
 
 export default function Home() {
   return <><Nav/><main className="bg-[#0b0d0f]">
