@@ -20,12 +20,8 @@ export function Nav(_props: NavProps = {}) {
   return (
     <nav className="sticky top-0 z-50 border-b border-white/10 bg-[#0a0c0e] text-white">
       <div className="mx-auto flex h-[76px] max-w-[1500px] items-center justify-between gap-5 px-5 sm:px-8 lg:px-10 xl:px-12">
-        <Link href="/" className="flex min-w-0 shrink-0 items-center gap-3" aria-label="The Trades Pipeline home">
-          <div className="font-display text-[38px] font-black leading-none tracking-[-.09em]"><span className="text-[#f1f0eb]">T</span><span className="text-[#ef5b0a]">TP</span></div>
-          <div className="hidden sm:block">
-            <div className="font-display text-[21px] font-semibold uppercase leading-[.92] tracking-[.16em] text-[#f1f0eb]">The Trades<br/>Pipeline</div>
-            <div className="mt-1 font-display text-[11px] font-semibold uppercase tracking-[.08em] text-[#ef5b0a]">Growth Without Breaking.</div>
-          </div>
+        <Link href="/" className="flex min-w-0 shrink-0 items-center" aria-label="The Trades Pipeline home">
+          <img src="/ttp-logo-site.png" alt="The Trades Pipeline — Growth Without Breaking" className="h-[54px] w-auto object-contain" />
         </Link>
         <div className="hidden xl:flex items-center gap-7">
           {links.map(([label, href]) => <Link key={href} href={href} className="font-display text-[11px] font-semibold uppercase tracking-[.06em] text-[#f1f0eb] transition hover:text-[#ef5b0a]">{label}</Link>)}
