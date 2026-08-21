@@ -54,7 +54,7 @@ export default function ConversationPage() {
 
     <footer className="bg-[#05090b] text-white"><div className="mx-auto max-w-[1500px] px-7 py-7 lg:px-10">
       <div className="grid gap-7 border-b border-white/20 pb-6 md:grid-cols-[1fr_1fr_1.2fr]"><div><img src="/ttp-logo-site.png" alt="The Trades Pipeline" className="h-14 w-auto"/></div><div className="flex gap-3 text-[12px] leading-5 text-white/70"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[#e65312]"/><span>205 North Michigan Ave., Suite 810<br/>Chicago, IL 60601</span></div><div className="grid gap-2 text-[12px] text-white/70"><a href="tel:+13127157977" className="flex items-center gap-3 hover:text-white"><Phone className="h-4 w-4 text-[#e65312]"/>(312) 715-7977</a><a href="mailto:davis@thetradespipeline.com" className="flex items-center gap-3 hover:text-white"><Mail className="h-4 w-4 text-[#e65312]"/>davis@thetradespipeline.com</a></div></div>
-      <div className="flex flex-col gap-3 pt-4 text-[10px] text-white/45 sm:flex-row sm:items-center sm:justify-between"><span>© 2026 The Trades Pipeline. All Rights Reserved.</span><div className="flex gap-5"><Link href="/foundation">Our Foundation</Link><Link href="/insights">Insights</Link></div></div>
+      <div className="flex justify-end gap-5 pt-4 text-[10px] text-white/45"><Link href="/foundation">Our Foundation</Link><Link href="/insights">Insights</Link></div>
     </div></footer>
   </main></>;
 }

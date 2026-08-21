@@ -38,7 +38,12 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${inter.variable} ${oswald.variable}`}
     >
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        {children}
+        <footer className="border-t border-white/15 bg-[#05090b] px-5 py-4 text-center text-[11px] tracking-wide text-white/55">
+          © {new Date().getFullYear()} The Trades Pipeline. All rights reserved.
+        </footer>
+      </body>
     </html>
   );
 }
