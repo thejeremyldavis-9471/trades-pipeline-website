@@ -23,3 +23,16 @@
   .eyebrow { @apply font-display text-xs font-semibold uppercase tracking-[0.28em]; color: var(--orange); }
   .industrial-grid { background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px); background-size: 42px 42px; }
 }
+
+/* Foundation composite artwork must remain fully legible on narrow screens. */
+@media (max-width: 1023px) {
+  div:has(> img[src="/foundation-integrity.png"]) {
+    aspect-ratio: 586 / 429 !important;
+    min-height: 0 !important;
+    background: #0e1315;
+  }
+  div:has(> img[src="/foundation-integrity.png"]) > img {
+    object-fit: contain !important;
+    object-position: center !important;
+  }
+}
