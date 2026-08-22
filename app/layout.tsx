@@ -44,7 +44,7 @@ export default function RootLayout({
         <footer className="border-t border-white/15 bg-[#05090b] px-5 py-4 text-center text-[11px] tracking-wide text-white/55">
           <div>© {new Date().getFullYear()} The Trades Pipeline. All rights reserved.</div>
           <div className="mt-2 flex justify-center gap-5">
-            <Link href="/privacy-policy" className="transition hover:text-white">Privacy Policy</Link>
+            <Link href="/privacy-policy" className="transition hover:text-white">Privacy Policy</Link>\n            <Link href="/terms-of-use" className="transition hover:text-white">Terms of Use</Link>
           </div>
         </footer>
       </body>
