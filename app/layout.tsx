@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Inter, Oswald } from "next/font/google";
 import "./globals.css";
 
@@ -41,7 +42,10 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         {children}
         <footer className="border-t border-white/15 bg-[#05090b] px-5 py-4 text-center text-[11px] tracking-wide text-white/55">
-          © {new Date().getFullYear()} The Trades Pipeline. All rights reserved.
+          <div>© {new Date().getFullYear()} The Trades Pipeline. All rights reserved.</div>
+          <div className="mt-2 flex justify-center gap-5">
+            <Link href="/privacy-policy" className="transition hover:text-white">Privacy Policy</Link>
+          </div>
         </footer>
       </body>
     </html>

@@ -36,3 +36,32 @@
     object-position: center !important;
   }
 }
+
+
+.legal-copy ul {
+  margin-left: 1.15rem;
+  list-style: none;
+}
+
+.legal-copy li {
+  position: relative;
+  margin-top: .6rem;
+  padding-left: 1.1rem;
+}
+
+.legal-copy li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .72rem;
+  width: 6px;
+  height: 6px;
+  background: var(--orange);
+}
+
+.legal-copy a {
+  color: #a9441f;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
